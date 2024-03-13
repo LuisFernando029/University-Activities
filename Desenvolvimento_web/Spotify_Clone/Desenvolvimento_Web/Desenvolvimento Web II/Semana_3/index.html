@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto PHP</title>
+</head>
+
+<body>
+    <main class="main">
+        <form method="post" enctype="multipart/form-data" action="form.php">
+            <header>
+                <h1 class="h1-form-body">Cadastre-se</h1>
+            </header>
+            <section class="first-section">
+                <div class="first-div">
+                    <label>Nome Completo</label class="label-form-body">
+                    <input type="text" class="input-form-body" name="nome"><br>
+
+                    <label class="label-form-body">Email</label>
+                    <input type="email" class="input-form-body" name="email">
+
+                    <label class="label-form-body">Senha</label>
+                    <input type="password" name="senha" class="input-form-body"><br>
+                </div>
+                <div class="second-div">
+                    <label class="label-form-body">Data de Nascimento</label>
+                    <input type="Date" name="nascimento" class="input-form-body"><br>
+
+                    <label class="label-form-body">Cidade</label>
+                    <input type="text" name="cidade" class="input-form-body"><br>
+
+                    <label>Estado</label>
+                    <select name="estado">
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Espirito Santo">Espirito Santo</option>
+                    </select>
+            </section>
+            </div>
+            <section class="second-section">
+                <div class="first-div-second-section">
+                    <label class="label-form-body">Sexo</label>
+                    <input type="radio" name="sexo" value="Masculino" class="input-form-body">
+                    <label class="label-form-body">Masculino</label>
+                    <input type="radio" name="sexo" value="Masculino" class="input-form-body">
+                    <label class="label-form-body">Feminino</label><br>
+                </div>
+                <div class="third-div">
+                    <label class="label-form-body">Interesses</label><br>
+                    <input type="checkbox" name="interesses[]" value="esporte" class="input-form-body">Esporte<br>
+                    <input type="checkbox" name="interesses[]" value="musica" class="input-form-body">Música<br>
+                    <input type="checkbox" name="interesses[]" value="tecnologia" class="input-form-body">Tecnologia<br>
+                </div>
+                <label class="label-form-body">Foto</label>
+                <input type="file" name="foto"><br>
+                <div class="last-div">
+                    <label class="label-form-body">Fale mais sobre voce: </label><br>
+                    <textarea rows="7" cols="40" maxlength="500" name="mensagem"
+                        class="textarea-form-body"></textarea><br><br><br>
+                </div>
+            </section>
+            <label class="label-form-body">Selecione uma cor para o seu perfil</label><br>
+            <input type="color" name="cor" class="input-form-body"><br>
+            <input type="submit" class="input-submit-form-body"><br><br><br>
+        </form>
+    </main>
+</body>
+
+</html>
